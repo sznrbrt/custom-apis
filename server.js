@@ -3,7 +3,10 @@
 const http = require('http');
 const fs = require('fs');
 
-const PORT = 3000;
+// // Access environment variables
+// var logname = process.env.LOGNAME;
+
+const PORT = process.env.PORT || 3000;
 
 var server = http.createServer((req, res) => {
   var params = req.url.split('/');
