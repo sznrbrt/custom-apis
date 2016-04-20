@@ -54,7 +54,6 @@ function getGravatar() {
   var email = encodeURIComponent($('#gravatarInput').val());
   $.get(`/getgravatar/${email}`)
   .done(function(data){
-    console.log(data);
     $('#gravatar').attr('src', data);
   })
   .fail(function(err){
