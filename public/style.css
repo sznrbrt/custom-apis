@@ -1,0 +1,29 @@
+#mathResult, #analResult, #ageResult {
+  color:orange;
+  font-weight: bold;
+}
+
+#sentence {
+  width: 40%;
+}
+
+input, button {
+  margin-top: 5px;
+}
+
+h6 {
+  margin:0;
+  padding:0;
+}
+
+#year, #month, #day {
+  width: 100px;
+}
+
+#gravatarInput {
+  width:200px;
+}
+
+#gravatar {
+  margin-top:10px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom APIs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.13.0/moment.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div>
+    <h3>Math</h3>
+    <select id='operation'>
+      <option value="sum">Addition</option>
+      <option value="sub">Subtraction</option>
+      <option value="mult">Multiplication</option>
+      <option value="div">Division</option>
+      <option value="pow">Exponentation</option>
+    </select>
+    <input type="number" id="num1" placeholder="Number #1">
+    <input type="number" id="num2" placeholder="Number #2">
+    <button id="calculate">Calculate</button>
+    <span id="mathResult"></span>
+  </div>
+
+  <div class="div">
+    <h3>Sentence analyzer</h3>
+    <select id='strAnal'>
+      <option value="wordcount">Word count</option>
+      <option value="charactercount">Character count</option>
+      <option value="avgwordlength">Average word length</option>
+    </select>
+    <input type="text" id="sentence">
+    <button id="analyze">Analyze</button>
+    <span id="analResult"></span>
+  </div>
+  <div class="div">
+    <h3>Age calculator</h3>
+    <h6>Enter your birth date</h6>
+    <input type="number" id="year" placeholder="Year" min=1900 max=2016>
+    <input type="number" id="month" placeholder="Month" min=1 max=12>
+    <input type="number" id="day" placeholder="Day" min=1 max=31>
+    <button id="calcAge">Calculate Age</button>
+    <span id="ageResult"></span>
+  </div>
+  <div class="div">
+    <h3>Gravatar lookup</h3>
+    <h6>Enter an email address</h6>
+    <input type="email" placeholder="Email" id="gravatarInput">
+    <button id="getGravatar">Get gravatar</button>
+    <div>
+      <img src="" id="gravatar" alt="">
+    </div>
+  </div>
+
+
+</body>
+</html>
